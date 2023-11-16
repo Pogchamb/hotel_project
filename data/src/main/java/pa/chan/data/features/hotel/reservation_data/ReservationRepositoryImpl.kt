@@ -1,8 +1,8 @@
 package pa.chan.data.features.hotel.reservation_data
 
 import pa.chan.data.features.hotel.reservation_data.dto.toModel
-import pa.chan.domain.features.hotel.model.ReservationModel
-import pa.chan.domain.features.hotel.repositories.ReservationRepository
+import pa.chan.domain.hotel.model.ReservationModel
+import pa.chan.domain.hotel.repositories.ReservationRepository
 import javax.inject.Inject
 
 class ReservationRepositoryImpl @Inject constructor(

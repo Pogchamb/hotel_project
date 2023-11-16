@@ -1,4 +1,4 @@
-package pa.chan.domain.features.hotel.model
+package pa.chan.domain.hotel.model
 
 data class RoomModel(
     val id: Int,

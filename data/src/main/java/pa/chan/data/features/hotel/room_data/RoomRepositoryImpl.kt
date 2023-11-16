@@ -1,8 +1,8 @@
 package pa.chan.data.features.hotel.room_data
 
 import pa.chan.data.features.hotel.room_data.dto.toModel
-import pa.chan.domain.features.hotel.model.RoomModel
-import pa.chan.domain.features.hotel.repositories.RoomRepository
+import pa.chan.domain.hotel.model.RoomModel
+import pa.chan.domain.hotel.repositories.RoomRepository
 import javax.inject.Inject
 
 class RoomRepositoryImpl @Inject constructor(

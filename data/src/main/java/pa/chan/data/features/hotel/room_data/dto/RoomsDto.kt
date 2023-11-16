@@ -1,7 +1,7 @@
 package pa.chan.data.features.hotel.room_data.dto
 
 import com.google.gson.annotations.SerializedName
-import pa.chan.domain.features.hotel.model.RoomModel
+import pa.chan.domain.hotel.model.RoomModel
 
 data class RoomsDto(
     val rooms: List<RoomDto>

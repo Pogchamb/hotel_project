@@ -1,7 +1,7 @@
 package pa.chan.data.features.hotel.reservation_data.dto
 
 import com.google.gson.annotations.SerializedName
-import pa.chan.domain.features.hotel.model.ReservationModel
+import pa.chan.domain.hotel.model.ReservationModel
 
 data class ReservationDto(
     val id: Int,
@@ -31,23 +31,24 @@ data class ReservationDto(
     val serviceCharge: Int
 )
 
-fun ReservationDto.toModel(): ReservationModel = ReservationModel(
-    id,
-    hotelName,
-    hotelAdress,
-    horating,
-    ratingName,
-    departure,
-    arrivalCountry,
-    tourDateStart,
-    tourDateStop,
-    numberOfNights,
-    room,
-    nutrition,
-    tourPrice,
-    fuelCharge,
-    serviceCharge
-)
+fun ReservationDto.toModel(): ReservationModel =
+    ReservationModel(
+        id,
+        hotelName,
+        hotelAdress,
+        horating,
+        ratingName,
+        departure,
+        arrivalCountry,
+        tourDateStart,
+        tourDateStop,
+        numberOfNights,
+        room,
+        nutrition,
+        tourPrice,
+        fuelCharge,
+        serviceCharge
+    )
 
 
 

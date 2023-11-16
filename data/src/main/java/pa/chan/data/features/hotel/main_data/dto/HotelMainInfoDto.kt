@@ -1,8 +1,8 @@
 package pa.chan.data.features.hotel.main_data.dto
 
 import com.google.gson.annotations.SerializedName
-import pa.chan.domain.features.hotel.model.AboutHotelModel
-import pa.chan.domain.features.hotel.model.HotelMainInfoModel
+import pa.chan.domain.hotel.model.AboutHotelModel
+import pa.chan.domain.hotel.model.HotelMainInfoModel
 
 data class HotelMainInfoDto(
     val id: Int,
@@ -26,19 +26,21 @@ data class AboutHotelDto(
     val peculiarities: List<String>
 )
 
-fun AboutHotelDto.toModel() : AboutHotelModel = AboutHotelModel(
-    description, peculiarities
-)
+fun AboutHotelDto.toModel() : AboutHotelModel =
+    AboutHotelModel(
+        description, peculiarities
+    )
 
 
-fun HotelMainInfoDto.toModel() : HotelMainInfoModel = HotelMainInfoModel(
-    id,
-    name,
-    adress,
-    minimalPrice,
-    priceForIt,
-    rating,
-    ratingName,
-    imageUrls,
-    aboutTheHotel.toModel()
-)
+fun HotelMainInfoDto.toModel() : HotelMainInfoModel =
+    HotelMainInfoModel(
+        id,
+        name,
+        adress,
+        minimalPrice,
+        priceForIt,
+        rating,
+        ratingName,
+        imageUrls,
+        aboutTheHotel.toModel()
+    )
